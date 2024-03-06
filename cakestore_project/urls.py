@@ -1,0 +1,35 @@
+"""cakestore_project URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from cakes.views import cake_list
+from orders.views import orderlist
+
+
+from django.urls import path
+from cakes.views import cake_list
+from cakes.views import login
+from cakes.views import products
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',cake_list),
+    path('http://127.0.0.1:5500/templates/login.html',login),
+    path('products/',products),
+    path('orders/',orderlist),
+   
+
+
+]

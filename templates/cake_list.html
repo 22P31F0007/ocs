@@ -1,0 +1,21 @@
+<!-- cakestore_project/cakes/templates/cakes/cake_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake Store</title>
+</head>
+<body>
+    <h1>Welcome to Our Cake Store</h1>
+
+    {% for cake in cakes %}
+        <div>
+            <h2>{{ cake.name }}</h2>
+            <p>{{ cake.description }}</p>
+            <p>Category: {{ cake.category }}</p>
+            <p>Price: ${{ cake.price }}</p>
+            
+        </div>
+    {% endfor %}
+</body>
+</html>

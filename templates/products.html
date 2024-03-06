@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Store - Products</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        .cake {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .cake img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cake-info {
+            padding: 1em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YUM-YUM - Products</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="cake">
+            <img src="https://www.cakehut.in/image/cache/catalog/2021%20cake%20photos/Double%20Chocolatee-600x600w.jpg.webp" alt="Chocolate Cake">
+            <div class="cake-info">
+                <h2>Chocolate Cake</h2>
+                <p>Delicious chocolate cake for any occasion.</p>
+                <p>800</p>
+                <a href="http://127.0.0.1:5500/templates/orders.html"></a><button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cake">
+            <img src="https://res.cloudinary.com/insignia-flowera-in/images/f_auto,q_auto/v1698919476/simple-pineapple-cake_82061f2b2/simple-pineapple-cake_82061f2b2.jpg" alt="Vanilla Cake">
+            <div class="cake-info">
+                <h2>Vanilla Cake</h2>
+                <p>Classic vanilla cake with a hint of sweetness.</p>
+                <p>700</p>
+                <a href="http://127.0.0.1:5500/templates/orders.html"><button>Add to Cart</button></a>
+            </div>
+        </div>
+
+        <!-- Add more cakes as needed -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 YUM-YUM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
